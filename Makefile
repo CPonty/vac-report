@@ -30,6 +30,9 @@ DOC_TEX := vac-report.tex
 %.pdf: %.gif
 	convert "$<" "$@"
 
+open: all
+	open -a /Applications/Skim.app $(DOC_PDF)
+
 # compile multi-file latex document:
 # 	unsupported images -> pdf
 #	tex -> pdf

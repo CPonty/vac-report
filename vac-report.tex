@@ -15,10 +15,6 @@
 \setlength{\parindent}{1cm}
 \setlength{\parskip}{0.5cm}
 
-%\definecolor{black}{gray}{0}
-%\newcommand{\hsp}{\hspace{20pt}}
-%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{black}{|}\hsp}{0pt}{\Huge\bfseries}
-
 \titleformat{\chapter}
   {\normalfont\huge\bfseries}{\thechapter}{1em}{}
 \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
@@ -38,7 +34,6 @@
 \huge\textit{University of Queensland} \\
 \vspace{0.5 cm}
 
-%\includegraphics[width=0.4\textwidth,natwidth=1000,natheight=1000]{UQlogo.pdf}
 \includegraphics[width=75mm]{UQlogo.png}
 \vspace{0.5 cm}\\
 \large \today \\
@@ -77,117 +72,47 @@ As I've been employed at GBST for over 3 years, going through my timesheets and 
 \end{center}
 \end{titlepage}
 
-\newpage
-	\pagenumbering{roman}
-%	\setcounter{page}{1}
+\newpage \pagenumbering{roman}
 
-% =====================================================================
-\begin{center}
-	{\Large \bf Report on Engineering Professional Practice} \\
-	\vspace{0.4cm}
-	{\Large \bf Chris Ponticello} \\
-	\vspace{0.4cm}
-	{\Large University of Queensland} \\
-	\vspace{2.0cm}
-	{\Large \bf Abstract} \\
-\end{center}
+\input{sections/abstract}
 
-lorem ipsum blah blah blah
-%\input{sections/abstract}
-
-% =====================================================================
 \tableofcontents
 %\listoffigures
 %\listoftables
 
-\newpage
-	\pagenumbering{arabic}
-%	\setcounter{page}{1}
+\newpage \pagenumbering{arabic}
 
-% =====================================================================
-\chapter{Introduction}
-
-lorem ipsum blah blah blah
+\input{sections/intro}
 
 %\newpage
 
-% =====================================================================
-\chapter{GBST}
-
-\section{Company Profile}
-
-\section{Structure}
-
-\section{Team Operation}
-
-lorem ipsum blah blah blah Figure \ref{gbstlogo} in text
-
-Citing \cite{gbstlogo} in text
-
-\vspace{0.5cm}
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=50mm]{GBSTlogo.png}
-\caption{The GBST Logo}
-\label{gbstlogo}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%
-\begin{comment}
-\begin{flushright}
-%\begin{center}
-%\includegraphics[width=0.4\textwidth,natwidth=1000,natheight=1000]{GBSTlogo.pdf}
-\includegraphics[width=50mm]{GBSTlogo.png}
-%\end{center}
-\end{flushright}
-\end{comment}
-%%%%%%%%%%%%%%%%%%%
+\input{sections/company}
 
 %\newpage
 
-% =====================================================================
-\chapter{Work Undertaken}
-
-\section{Responsibilities in team}
-
-\section{BIR}
-
-\section{Other Projects}
-
-Atlassian \textit{Jira}\footnote{Atlassian Jira software - https://www.atlassian.com/software/jira}
+\input{sections/work}
 
 %\newpage
 
-% =====================================================================
-\chapter{Evaluation of Employment}
+\input{sections/evaluation}
 
 \newpage
 
-% =====================================================================
-\chapter{Manager's Comments}
+\input{sections/managers}
 
 \newpage
 
-% =====================================================================
 \chapter{References}
 
-% MAKE GIT REPO - MINUS PICS
 % DOUBLE SPACING
-% SPLIT INTO FILES PER SECTION
-% UPDATE MAKEFILE
-% INSERT BIBLIOGRAPHY (BIBTEX) HERE
 
 \begingroup
 \renewcommand{\chapter}[2]{}
 \bibliography{references/bibliography}
 \endgroup
 
-\newpage
-%	\addtocounter{section}{1}
+\newpage %\addtocounter{section}{1}
 
-% =====================================================================
-\chapter*{Appendix}
-\addcontentsline{toc}{chapter}{Appendix}
+\input{sections/appendix}
 
-% =====================================================================
 \end{document}
