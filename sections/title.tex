@@ -1,30 +1,5 @@
-\documentclass[a4paper]{report}
-	\usepackage{amsmath}
-	\usepackage{fullpage}
-	\usepackage{fixltx2e}
-	\usepackage{graphicx}
-	%\usepackage[bottom, norule]{footmisc}
-	\usepackage{indentfirst}
-	\usepackage{graphicx}
-	\usepackage{verbatim}
-	\usepackage{color}
-	\usepackage{titlesec}
-
-%\setcounter{secnumdepth}{0}
-
-\setlength{\parindent}{1cm}
-\setlength{\parskip}{0.5cm}
-
-\titleformat{\chapter}
-  {\normalfont\huge\bfseries}{\thechapter}{1em}{}
-\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-
-\bibliographystyle{plain}
-
-\begin{document}
-
 \thispagestyle{empty}
-% =====================================================================
+
 \begin{titlepage}
 \begin{center}
 
@@ -71,48 +46,3 @@ As I've been employed at GBST for over 3 years, going through my timesheets and 
 
 \end{center}
 \end{titlepage}
-
-\newpage \pagenumbering{roman}
-
-\input{sections/abstract}
-
-\tableofcontents
-%\listoffigures
-%\listoftables
-
-\newpage \pagenumbering{arabic}
-
-\input{sections/intro}
-
-%\newpage
-
-\input{sections/company}
-
-%\newpage
-
-\input{sections/work}
-
-%\newpage
-
-\input{sections/evaluation}
-
-\newpage
-
-\input{sections/managers}
-
-\newpage
-
-\chapter{References}
-
-% DOUBLE SPACING
-
-\begingroup
-\renewcommand{\chapter}[2]{}
-\bibliography{references/bibliography}
-\endgroup
-
-\newpage %\addtocounter{section}{1}
-
-\input{sections/appendix}
-
-\end{document}
