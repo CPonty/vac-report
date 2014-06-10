@@ -47,6 +47,6 @@ doc: $(IMG_PDF) $(REFERENCES)
 # compile single-file latex document
 single: $(DOC_PDF)
 
-clean: $(DOC_PDF)
-	rm *.log *.lof *.lot *.toc *.aux 2>/dev/null; exit 0
-	rm $(DOC_PDF)
+clean:
+	rm *.log *.lof *.lot *.toc *.aux *.bbl *.bcf *.blg 2>/dev/null; exit 0
+	rm $(DOC_PDF) 2>/dev/null; exit 0

@@ -9,6 +9,14 @@
 	\usepackage{verbatim}
 	\usepackage{color}
 	\usepackage{titlesec}
+	\usepackage{hyperref}
+	\usepackage{url}
+	\usepackage{setspace}
+	\doublespacing
+	%\linespread{2}
+	%\usepackage[style=ieee]{biblatex}
+
+\bibliographystyle{plain}
 
 %\setcounter{secnumdepth}{0}
 
@@ -18,8 +26,6 @@
 \titleformat{\chapter}
   {\normalfont\huge\bfseries}{\thechapter}{1em}{}
 \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-
-\bibliographystyle{plain}
 
 \begin{document}
 % =====================================================================
@@ -34,6 +40,7 @@
 %\listoffigures
 %\listoftables
 
+\newpage
 \pagenumbering{arabic}
 
 \input{sections/intro}
@@ -51,5 +58,3 @@
 \input{sections/appendix}
 
 \end{document}
-
-% DOUBLE SPACING
