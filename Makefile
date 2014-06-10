@@ -20,7 +20,8 @@ DOC_TEX := vac-report.tex
 
 # =====================================================================
 
-%.bib: $(AUX) $(DOC_PDF)
+%.bib: $(AUX)
+	pdflatex $(DOC_TEX)
 	bibtex $(AUX)
 %.pdf: %.tex
 	pdflatex "$<" "$@"
