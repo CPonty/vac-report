@@ -1,1 +1,0 @@
-convert file1.png file2.pdf
