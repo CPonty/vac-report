@@ -16,7 +16,7 @@
 	%\linespread{2}
 	%\usepackage[style=ieee]{biblatex}
 
-\bibliographystyle{IEEEtran}
+\bibliographystyle{customIEEEtran}
 
 %\setcounter{secnumdepth}{0}
 
@@ -28,6 +28,10 @@
 \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 
 \begin{document}
+%\bstctlcite{IEEEexample:BSTcontrol}
+%@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+%	CTLdash_repeated_names = "no",
+%}
 % =====================================================================
 
 \input{sections/title}
@@ -55,6 +59,6 @@
 
 \input{sections/references}
 
-\input{sections/appendix}
+%\input{sections/appendix}
 
 \end{document}

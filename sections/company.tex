@@ -2,17 +2,10 @@
 
 \section{Company Profile}
 
-GBST Holdings Limited (GBST) was established in 1984 as Star Systems, to provide securities broking and transaction services in Australia and New Zealand. After over 25 years of expansion, the company's flagship product, Shares, now processes the majority of all trades in the Australian market (ASX). GBST employs over 350 staff in offices across Australia, the UK, Asia and the US, with Australian offices including Brisbane, Sydney, Melbourne, Wollongong and Adelaide. \cite{gbsthistory} Clients include Australian banks (NAB, Westpac, Commonwealth, ANZ, Suncorp), Stockbrokers (Patersons, Burrell, BBY), and many other institutions / brokerage houses.\cite{gbstclients}.
-\\
-\\
-GBST provides securities transaction and fund administration software for the financial services industry via three divisions:
-
-\begin{itemize}
-\item \textbf{Capital Markets} (formerly Broker Services), the lead provider of securities transaction and client accounting software in Australia. Its products process \~\$130 Billion of ASX trades every month.
-\item \textbf{Wealth Management}, the lead provider of funds administration software in Australia. Its products administer over \$150 Billion in funds across Australia and the UK.
-\item \textbf{Financial Services}, recently established (May 2008). Its focus is on linking clients' front and back office functions together, distributing products and services to financial advisor and wealth management professionals.
-\end{itemize}
-
+GBST Holdings Limited (GBST) was established in 1984 as Star Systems, to provide securities broking and transaction services in Australia and New Zealand. After over 25 years of expansion, the company's flagship product, Shares, now processes well over 50\% of all trades in the Australian market (ASX). \cite{gbsthistory} GBST provides securities transaction and fund administration software for financial service industry clients, employing over 350 staff in offices across Australia, the UK, Asia and the US. Australian offices include Brisbane, Sydney, Melbourne and Wollongong. 
+%such as Australian banks (NAB, Westpac, Commonwealth, ANZ, Suncorp), Stockbrokers (Patersons, Burrell, BBY), and many other institutions / brokerage houses. \cite{gbstclients}
+%\\
+%\\
 \vspace{0.5cm}
 \begin{figure}[ht!]
 \centering
@@ -24,15 +17,47 @@ GBST provides securities transaction and fund administration software for the fi
 Some of GBST's products include:
 
 \begin{itemize}
-\item \textbf{Shares}, a multi-market, multi-currency accounting and securities transaction solution. Shares has been GBST's flagship products since 1993 and is the most widely used middle and back-office equities system in Australia \cite{gbstshares}
-\item \textbf{FrontOffice}, a browser-based application presenting real-time account data for advisers, integrating data from several sources (including Shares) \cite{gbstfrontoffice}
-\item \textbf{BIR} (Business Intelligence Reporting), a versatile, browser-based reporting tool capable of scheduling, emailing, exporting and ad-hoc generation of reports on data from a Business Intelligence database. \cite{gbstbir} It includes a set of pre-built report templates 
+\item \textbf{GBST Shares\texttrademark}, a multi-market, multi-currency accounting and securities transaction solution. Shares has been GBST's flagship products since 1993 and is the most widely used middle and back-office equities system in Australia \cite{gbstshares}
+\item \textbf{GBST SYN\~}, a highly adaptible product suite set to replace Shares as GBST's solution for post-trade processing \cite{gbstsyn}
+\item \textbf{GBST FrontOffice\texttrademark}, a browser-based application presenting real-time account data for advisers, integrating data from several sources (including Shares) \cite{gbstfrontoffice}
+\item \textbf{GBST BIR\texttrademark} (Business Intelligence Reporting), a versatile, browser-based reporting tool capable of scheduling, emailing, exporting and ad-hoc generation of reports on data from a Business Intelligence database. \cite{gbstbir} It includes a set of pre-built report templates 
 \end{itemize}
 %: Broker Services, Wealth Management and Financial Services. 
 
+\newpage
+
 \section{Structure}
 
-GBST's Brisbane office is the headquarters for GBST in Australia. The Capital Markets Java team, in which I have worked since 2011, is based here. In our division's structure (see Figure \ref{cm_java_structure}),
+\subsection{Division}
+
+The company has three divisions:
+
+\begin{itemize}
+\item \textbf{Capital Markets}, the lead provider of securities transaction and client accounting software in Australia. Its products process \~\$130 Billion of ASX trades every month.
+\item \textbf{Wealth Management}, the lead provider of funds administration software in Australia. Its products administer over \$150 Billion in funds across Australia and the UK.
+\item \textbf{Financial Services}, recently established (May 2008). Its focus is on linking clients' front and back office functions together, distributing products and services to financial advisor and wealth management professionals.
+\end{itemize}
+
+GBST's Brisbane office is the headquarters for GBST in Australia. The Capital Markets Java team, in which I have worked since 2011, is based here. Roles in the Capital Markets division include:
+\begin{itemize}
+\item \textbf{The CEO}, who manages all projects and operations
+\item \textbf{Head of Projects} \& Solution Delivery, directly overseeing and approving work done by each team
+\item \textbf{Project manager}, responsible for keeping employees happy with working arrangements and ensuring work is completed on-time
+\end{itemize}
+
+\subsection{Team}
+
+CM Java operates as an agile software development team, following Scrum methodology: work is completed in sprints (blocks of time totalling a few weeks), after which the team reviews the sprint and plans the next one. The team's products include the FrontOffice suite (FrontOffice and associated products), BIR, and many others. Team roles include: 
+\begin{itemize}
+\item \textbf{Product owners}, responsible for planning the direction their product takes, interacting with clients, and adding 'stories' (requirements or pieces of work) for the team's sprint backlog
+\item \textbf{The scrum master}, who facilitates Scrum meetings and ensures the process is running smoothly
+\item \textbf{Developers and testers}, who either operate as a resource within the 'scrum' process, or spend periods of time as dedicated support for the team's products
+\item \textbf{Intern developers}, who work with the full-time developers on a part-time basis as available
+\end{itemize}
+
+\newpage
+
+A simplified team structure diagram is presented below - Figure \ref{cm_java_structure}
 
 \vspace{0.5cm}
 \begin{figure}[ht!]
@@ -41,8 +66,17 @@ GBST's Brisbane office is the headquarters for GBST in Australia. The Capital Ma
 \caption{The Java team structure, Capital Markets division}
 \label{cm_java_structure}
 \end{figure}
+\vspace{0.5cm}
 
-\section{Team Operation}
+Several measures are taken to facilitate team communication, problem-solving improvement, including:
+\begin{itemize}
+\item \textbf{Daily stand-up meetings}, at which each team member communicates the work they are undertaking and any issues encountered
+\item \textbf{Sprint retrospectives}, where the team reviews what went well and what needs improvement from the completed sprint
+\item \textbf{Process Improvement meetings}, where the team suggests work to add to the next sprint which will improve a product or help the team to operate more effectively (e.g. writing a script/tool or  reconfiguring a test environment)
+\item \textbf{Daily Handover}, a process whereby interns and other part-time developers report in detail on work completed, such that any other team member can pick up their task the following day
+\end{itemize}
+
+%\section{Team Operation}
 
 %======================================================================
 \begin{comment}
