@@ -31,7 +31,9 @@ DOC_TEX := vac-report.tex
 %.pdf: %.gif
 	convert "$<" "$@"
 
-open: all
+open: all reopen
+
+reopen:
 	open -a /Applications/Skim.app $(DOC_PDF)
 
 # compile multi-file latex document:
