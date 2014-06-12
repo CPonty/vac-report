@@ -52,6 +52,10 @@ doc: $(REFERENCES)
 # compile single-file latex document
 single: $(DOC_PDF)
 
-clean:
-	rm *.log *.lof *.lot *.toc *.aux *.bbl *.bcf *.blg 2>/dev/null; exit 0
+clean: clean_lite
 	rm $(DOC_PDF) 2>/dev/null; exit 0
+
+clean_lite:
+	rm *.log *.lof *.lot *.toc *.out *.aux *.bbl *.bcf *.blg 2>/dev/null; exit 0
+
+release: all clean_lite
